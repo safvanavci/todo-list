@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-teal-100">
+    <div class="w-96  bg-slate-50 relative m-auto mt-10 rounded-md flex flex-col items-center shadow-md">
+        <h1 class="p-4 text-2xl text-cyan-600 font-extrabold">TODO LIST</h1>
+        <form id="card">
+            <div class="flex items-center py-5 border-b border-cyan-300" >
+                <input type="text" id="input" class="w-72 h-9 mr-4 p-4 border border-cyan-500 rounded-md focus:border-cyan-700 outline-none bg-inherit" placeholder="Add New Todo">  
+                <button type="submit" class="text-4xl text-cyan-500 hover:text-cyan-700">
+                    <i class="fa-regular fa-square-plus"></i>
+                </button>
+            </div>
+        </form>
+        <div class="w-80 " id="del">
+            <ul class="py-5" id="list-group">
+            </ul>
+        </div>
+        <a href="#" id="clear" class="bg-cyan-400 hover:bg-cyan-700 text-slate-50 py-2 px-5 rounded-md mb-5">Clear</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
